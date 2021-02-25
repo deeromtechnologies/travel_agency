@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>travel agency</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+       <script src = "https://maps.googleapis.com/maps/api/js"></script>
+<style>
+  .navbar-nav a{
+    color: red;
+    float: right;
+  
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+  }
+   
+  .navbar img{
+    width: 500px;
+    height: 100px;}
+
+.navbar-nav a:hover {
+  background-color: black;
+  color: red;
+  
+}
+.search a{
+  
+  color: white;
+  padding-left: 1400px;
+  text-decoration: none;
+  font-size: 17px;
+
+  
+}
+
+.container-fluid {
+  
+  background-image: url("images/img2.webp");
+
+  min-height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  /* Needed to position the navbar */
+  position: relative;
+  padding-top:  500px;
+  padding-left: 1000px
+}
+.navbar img:hover{
+  background-color: white;
+  transform: scale(2.5);
+}
+.next{
+  background-color: lightgrey;
+  color: white;
+  min-height: 200px;
+  padding-top:  50px;
+  padding-left: 1000px
+}
+.next h1{
+  color: black;
+}
+select{
+  width: 200px;
+
+}
+.footer {
+  border-radius: 2px solid black;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   color: white;
+   
+}
+button{
+  background-color: red;
+}
+#footer1{
+  padding-top: 100px;
+  padding-left: 50px;
+  color:white;
+
+}
+
+.footer-border {
+    border-top: 2px solid #dc3545;
+    padding-bottom: 26px;
+    padding-top: 20px;
+    color: #dc3545;
+}
+.text {
+    padding-bottom: 26px;
+    background-color: #343a40;
+}
+.text2 {
+    width: 70%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+#text3{
+  padding-right: 400px;
+    padding-left: 400px;
+    color: red;
+}
+#footer{
+  background-color: #343a40;
+
+}
+#map{
+  padding-top: 40px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+#company{
+  padding-top: 100px;
+  color: white;
+}
+.links ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.where_to_go
+  {
+    background: #040E27;
+    padding: 50px 0;
+  
+    
+}
+.container1 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    
+
+}
+.align-items-center {
+    
+    align-items: center!important;
+    padding-left: 500px;
+  }
+  .where_to_go .input_field input {
+    width: 100%;
+    height: 50px;
+    
+    border: 1px solid #363E52;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: grey
+  }
+  .search_wrap{
+    padding-left: 50px;
+  }
+   .where_to_go .form_area h3 {
+    font-size: 30px;
+    color: #fff;
+    
+    margin-bottom: 0;
+    padding-right: 200px;
+    color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+</style>
+
+</head>
+<nav class="navbar navbar-expand-sm bg-white navbar-white ">
+  <!-- Brand/logo -->
+  <a class="navbar-brand" href="#">
+    <img src="images/org.png" alt="logo" style="width:150px;">
+  </a>
+  
+  <!-- Links -->
+  <ul class="navbar-nav ">
+    <li class="nav-item">
+      <a class="nav-link" href="#" >home </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">about</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">contact</a>
+    </li>
+  </ul>
+  <div class="search">
+    <a  href="#"><i class="fa fa-search"> </i></a>
+  </div>
+  </nav>
+
+<div class="container-fluid">
+  <div class="new-content">
+    <h1>where you want to go</h1>
+     
+  </div>
+</div>
+
+<div class="where_to_go">
+  <div class="container1">
+    <div class="row align-items-center">
+      <div class="col-lg-4" id="go">
+        <div class="form_area">
+          <h3>Where you want to go?</h3>
+        </div>
+      </div>
+      <div class="col-lg-8" id="go1">
+        <div class="search_wrap">
+          <form class="search_form" action="#">
+            <div class="input_field">
+              <input type="text" placeholder="Where to go?">
+            </div>
+<br>
+          <div class="input_field">
+            <input type="date" id="start" name="trip-start"
+                value="date"
+              min="2018-01-01" max="2021-12-31">
+          </div>
+<br>
+        <div class="input_field">
+          <select value="take action" name="select">
+          <option>travel type</option>>
+          <option value="0">Outbound </option>
+          <option value="1">Domestic </option>
+          <option value="2">Leisure</option>
+          <option value="3">Inbound </option>
+          
+          </option>
+        
+
+        </select>
+      </div>
+<br><br>
+      <div class="search_btn">
+        <button class="boxed-btn4 " type="submit">Search</button>
+      </div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+        
+  
+  <div class="row" id=footer>
+    <div class="col-lg-4" id="footer1">
+  <img src="images/org.png" alt="logo" style="width:150px;">
+
+  <p>5th flora, 700/D kings road,
+  <p> green
+lane New York-1782
++10 367 826 2567</p>
+<p>contact@make_memories.com</p>
+  <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
+
+</div>
+<div class="col-lg-2" id="company">
+  
+    <h3>company</h3>
+<ul class="links">
+  <li>about</li>
+  <li>contact</li>
+  <li>blog</li>
+  <li>gallery</li>
+</ul>
+  
+</div>
+
+<div class="col-lg-2" id="company">
+  
+    <h3>popular places</h3>
+<ul class="links double_links">
+  <li>Indonesia</li>
+  <li>America</li>
+  <li>India</li>
+  <li>Switzerland</li>
+  <li>Italy</li>
+  <li>Canada</li>
+ <li> Franch</li>
+ <li>England</li>
+</ul>
+  
+</div>
+<div class="col-lg-4" id="map">
+
+ <div id = "sample" style = "width:580px; height:400px;"></div>
+ <script>
+         function loadMap() {
+      
+            var mapOptions = {
+               center:new google.maps.LatLng(11.8745, 75.3704), 
+               zoom:12, 
+               mapTypeId:google.maps.MapTypeId.ROADMAP
+            };
+        
+            var map = new google.maps.Map(document.getElementById("sample"),mapOptions);
+         }
+      
+         google.maps.event.addDomListener(window, 'load', loadMap);
+      </script>
+      
+
+      
+     
+</div>
+ </div>
+ <div class="text">
+  <div class="text2">
+
+<div class="footer-border"></div>
+<div class="row">
+  <div class="col-xl-12" id="text3">
+  <p>Copyright ©2021 All rights reserved  |  <strong >MAKE MEMORIES</strong></p>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
