@@ -1,80 +1,40 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway');
-html,h1,h2,h3,h4,h5,h6,a{
- font-family: "Raleway";
+.navbar-nav a{
+    color: red;
+    float: right;
+  
+
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
-.navbar{ background:#F97300;}
 
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+  }
+   
+  .navbar img{
+    width: 500px;
+    height: 100px;}
 
-.nav-link{ margin-right: 1em !important;}
-
-.nav-link:hover{ background: #f4f4f4; color: #f97300; }
-
-.navbar-collapse{ justify-content: flex-end;}
-
-.navbar-toggler{  background:#fff !important;}
-
-.bg-dark{
-background-color:#343a40!important
+.navbar-nav a:hover {
+  background-color: black;
+  color: red;
+  
 }
-.bg-primary{
-background-color:#007bff!important
+.search a{
+  
+  color: white;
+  padding-left: 1200px;
+  text-decoration: none;
+  font-size: 17px;
+
+  
 }
-.navbar-collapse{
-      justify-content: flex-end;
-      color: red;
-    }
-    .navbar{ background:#F97300;
-    }
-    .des{
-      position: absolute;
-      margin auto;
-      top:30%
-    }
-    .des h1{
-      color:blue;
-    }
-    .des p{
-      color:red;
-      font-size: 20px
-    }
-    .overlay{
-      position: absolute;
-      min-height:100%;
-      min-width: 100%;
-      left:0;
-      top:0;
-      background:rgba(244, 244, 244, 0.79);
-    }
-    .des button{
-      border:1px solid blue;
-      background-color: yellow;
-      color: black;
-    }
-    .header  {
-      background-image: url("../images/computer.jpg");
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
-    }
-    .navbar-collapse a{
-      color:#F97300;
-    }
-    .img1 img{
-      background-attachment: fixed;
-      background-size: cover;
-      background-position: center;
 
-    }
+.container-fluid {
+  
+  background-image: url("images/img7.jpg");
 
-    body {font-family: Arial, Helvetica, sans-serif;}
-* {box-sizing: border-box;}
-
-.bg-img {
-  /* The image used */
-  background-image: url("images/org2.png");
-
-  min-height: 200px;
+  min-height: 700px;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -83,53 +43,187 @@ background-color:#007bff!important
   
   /* Needed to position the navbar */
   position: relative;
+  padding-top:  500px;
+  padding-left: 1000px
 }
-
-/* Position the navbar container inside the image */
-.container {
-  position: absolute;
-  margin: 20px;
-  width: auto;
-}
-
-/* The navbar */
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
-
-/* Navbar links */
-.topnav a {
-  float: right;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.topnav a:hover {
+.navbar img:hover{
   background-color: white;
-  color: red;
+  transform: scale(2.5);
+}
+.next{
+  background-color: lightgrey;
+  color: white;
+  min-height: 200px;
+  padding-top:  50px;
+  padding-left: 1000px
+}
+.next h1{
+  color: black;
+}
+select{
+  width: 200px;
+
+}
+.footer {
+  border-radius: 2px solid black;
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+   color: white;
+   
+}
+button{
+  background-color: white;
+}
+#footer1{
+  padding-top: 100px;
+  padding-left: 50px;
+  color:white;
+
 }
 
+.footer-border {
+    border-top: 2px solid #dc3545;
+    padding-bottom: 26px;
+    padding-top: 20px;
+    color: #dc3545;
+}
+.text {
+    padding-bottom: 26px;
+    background-color: #343a40;
+}
+.text2 {
+    width: 70%;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    box-sizing: border-box;
+    padding-top: 40px;
+}
+#text3{
+  padding-right: 400px;
+    padding-left: 400px;
+    color: red;
+}
+#footer{
+  background-color: #343a40;
+
+}
+#map{
+  padding-top: 40px;
+}
+.search-container {
+  padding-left: 1000px;
+  
+ 
+}
+.serach-container button{
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+}
+.search-container button:hover {
+  background: black;
+  color:red;
+}
+
+  .search-container input[type=text] {
+    border: 1px solid #ccc;
+  }
+#company{
+  padding-top: 100px;
+  color: white;
+}
+.links ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.where_to_go
+  {
+    background: #040E27;
+    padding: 50px 0;
+  padding-bottom: 100px;
+    
+}
+.container1 {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 150px;
+    margin-right: auto;
+    margin-left: auto;
+
+    
+
+}
+.align-items-center {
+    
+    align-items: center!important;
+    padding-left: 500px;
+
+  }
+  .where_to_go .input_field input {
+    width: 100%;
+    height: 50px;
+    
+    border: 1px solid #363E52;
+    padding-left: 15px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    color: grey
+  }
+  .search_wrap{
+    padding-left: 50px;
+  }
+   .where_to_go .form_area h3 {
+    font-size: 30px;
+    color: #fff;
+    
+    margin-bottom: 0;
+    padding-right: 200px;
+    color: white;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
 
 
-.carousel-indicators {
-    bottom: 20px;
 
   
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    z-index: 15;
-    width: 60%;
-    padding-left: 0;
-    margin-left: -30%;
-    text-align: center;
-    list-style: none;
+.contact-form{
+ 
+ position: relative;  
 }
-ol, ul {
-    margin-top: 0;
-    margin-bottom: 10px;
+
+.contact-form h1{
+ padding:2em 1px;
+ color: #F97300; 
+}
+.contact-form .right{
+ max-width: 600px;
+}
+.contact-form .right .btn-secondary{
+ background:  #F97300;
+ color: #fff;
+ border:0;
+}
+.contact-form .right .form-control::placeholder{
+ color: #888;
+ font-size: 16px;
 }
